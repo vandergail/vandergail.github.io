@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/post-layout.njk
 title: First Post!
 date: 2022-04-12
 tags: ['post']

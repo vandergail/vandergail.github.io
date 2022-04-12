@@ -10,13 +10,14 @@
 body {
     margin: 0;
     height: 100vh;
+    display: flex;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* ==============
@@ -28,47 +29,50 @@ header {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 8px;
+    padding: 0 8px;
     font-family: 'Roboto', sans-serif;
-}
-
-div.main_inner {
-    display: flex;
-    margin-top: 64px;
 }
 
 /* ==============
     nav menu styles
    ============== */
 
-nav.drawer {
+.drawer {
     width: 200px;
+    padding-top: 64px;
     border-right: solid 1px #ddd; 
 }
 
-nav.drawer ul {
+.drawer ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-nav.drawer a {
+.drawer a {
     text-decoration: none;
 }
 
-nav.drawer li {
-    padding: 8px 8px;
+.drawer li {
+    padding: 12px 8px;
 }
 
-nav.drawer li:hover {
+.drawer li:hover {
     background-color: #ddd;
 }
 
 /* ==============
-    main content styles
+    page content styles
    ============== */
 
 main {
-    padding: 16px;
+    padding-top: 64px;
+    flex-grow: 1;
     font-family: 'Roboto', sans-serif;
+    overflow: auto;
+}
+
+.page-content {
+    padding: 0 18px;
 }
