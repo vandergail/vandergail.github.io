@@ -10,69 +10,75 @@
 body {
     margin: 0;
     height: 100vh;
-    display: flex;
+    background-image: url('/images/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
-    position: fixed;
-    top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    height: 80vh;
+    position: relative;    
+    background: linear-gradient(to top, #00000070, transparent);
 }
 
 /* ==============
     page layout styles
    ============== */
-
-.banner {
-    height: 64px;
+.site-info {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    padding: 0 8px;
+}
+
+.site-title {
+    padding-left: 16px;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-/* ==============
-    nav menu styles
-   ============== */
-
-.drawer {
-    width: 200px;
-    padding-top: 64px;
-    border-right: solid 1px #ddd; 
-}
-
-.drawer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.drawer a {
+.site-title a, a:hover, a:visited, a:active {
     text-decoration: none;
+    color: inherit
 }
 
-.drawer li {
-    padding: 12px 8px;
+.social-links {
+    margin-left: auto;
+    padding-right: 32px;
 }
 
-.drawer li:hover {
-    background-color: #ddd;
+.social-links svg {
+    fill: white;
+    height: 32px;
 }
 
-/* ==============
+.social-links a {
+    padding-left: 16px;
+}
+
+/* =====================
     page content styles
-   ============== */
+   ===================== */
+
+
 
 main {
-    padding-top: 64px;
-    flex-grow: 1;
     font-family: 'Roboto', sans-serif;
     overflow: auto;
+    background-color: white;
+    min-height: 20vh;
 }
 
 .page-content {
-    padding: 0 18px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
