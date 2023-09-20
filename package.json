@@ -1,7 +1,6 @@
 {
   "name": "vandergail.github.io",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
@@ -21,7 +20,11 @@
   },
   "homepage": "https://github.com/vandergail/vandergail.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.2",
     "moment": "^2.29.2"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "description": ""
 }
