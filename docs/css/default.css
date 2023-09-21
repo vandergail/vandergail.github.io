@@ -1,13 +1,7 @@
 /* ==============
-	fonts
+    imported fonts
    ============== */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
-
-@font-face {
-    font-family: DOS-VGA;
-   src: url("../fonts/Web437_IBM_VGA_8x16.woff"); 
-}
-
 
 /* ==============
     global styles
@@ -16,6 +10,7 @@
 body {
     margin: 0;
     height: 100vh;
+    
 }
 
 header {
@@ -72,7 +67,7 @@ header {
 .site-content {
     min-height: 60vh;
     overflow: auto;
-    background-color: gray;
+    background-color: white;
 }
 
 .wrap {
@@ -88,20 +83,18 @@ main {
 }
 
 .main-content article {
-    font-family: DOS-VGA;
-    color: lightgray;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .main-content h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
 
 }
 
 .main-content time {
-    font-size: 32px;
-    /*font-weight: 700;
-     */
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .main-content a {
