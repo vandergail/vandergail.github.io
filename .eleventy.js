@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("./src/images/");
 	eleventyConfig.addPassthroughCopy("./src/css/");
 	eleventyConfig.addPassthroughCopy("./src/images/");
+	eleventyConfig.addPassthroughCopy("./src/fonts/");
 
 	eleventyConfig.addFilter('dateIso', date => { return moment(date).toISOString();});
 	eleventyConfig.addFilter('dateReadable', date => { return moment(date).utc().format('LL');});
