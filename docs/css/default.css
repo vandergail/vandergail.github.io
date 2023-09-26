@@ -1,7 +1,11 @@
 /* ==============
-    imported fonts
+    fonts
    ============== */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+@font-face {
+        font-family: 'vga-8x16';
+        src:    url('/fonts/Web437_IBM_VGA_8x16.woff');
+}
 
 /* ==============
     global styles
@@ -10,17 +14,12 @@
 body {
     margin: 0;
     height: 100vh;
-    
+    font-family: 'vga-8x16';
+    background-color: #000000;
 }
 
 header {
-    width: 100%;
-    height: 40vh;
-    position: relative;  
-    background-image: url('/images/bg.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+
 } 
 
 /* ==============
@@ -28,36 +27,28 @@ header {
    ============== */
 .site-info {
     width: 100%;
-    left: 0;
-    bottom: 0;
-    position: absolute;
     display: flex;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0 18px;
+    padding: 16px 32px;
 }
 
 .site-title {
-    color: white;
-    font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	color: #ffffff;
+	padding: 0 12px;
 }
 
-.site-title a, a:hover, a:visited, a:active {
-    text-decoration: none;
-    color: inherit
+.site-links {
+	color: #ffff55;
+	padding: 12px 24px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffffff;
 }
 
-.social-links {
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.social-links svg {
-    height: 32px;
-    padding: 4px 6px;
-    fill: white;
+.site-links a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* =====================
@@ -67,7 +58,7 @@ header {
 .site-content {
     min-height: 60vh;
     overflow: auto;
-    background-color: white;
+    background-color: #555555;
 }
 
 .wrap {
@@ -83,18 +74,18 @@ main {
 }
 
 .main-content article {
-    font-family: 'Source Sans Pro', sans-serif;
+    color: #aaaaaa;
 }
 
 .main-content h1 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
 
 }
 
 .main-content time {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 16px;
+    color: #55ffff;
 }
 
 .main-content a {
