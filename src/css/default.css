@@ -27,7 +27,7 @@ page layout styles
 .site-info {
 	display: flex;
 	align-items: center;
-	padding: 16px 32px;
+	padding: 16px;
 }
 
 .site-title {
@@ -37,7 +37,7 @@ page layout styles
 
 .site-links {
 	color: #ffff55;
-	padding: 12px;
+	margin-left: auto;
 }
 
 .site-links a {
@@ -58,7 +58,6 @@ site content styles
 ===================== */
 
 .site-content {
-"	min-height: 60vh;"
 	overflow: auto;
 }
 
@@ -96,3 +95,24 @@ main {
 	text-decoration: none;
 	color: inherit;
 }
+
+/* ======================================
+ * 	site responsive design overrides
+ * ====================================== */
+
+@media screen and (max-width: 447px) {
+	.site-info {
+		flex-direction: column;
+	}
+
+	.site-title {
+		margin-bottom: 24px;
+	}
+	
+	.site-links {
+		margin-right: auto;
+		white-space: nowrap;
+	}
+}
+
+
